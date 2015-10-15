@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <com.bbk.lling.downloadpercentdemo.DownloadPercentView
+        android:id="@+id/downloadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        custom:notBeginImg="@drawable/ic_no_download"
+        custom:waitImg="@drawable/ic_wait"
+        custom:pausedImg="@drawable/ic_pause"
+        custom:finishedImg="@drawable/ic_finished"
+        custom:strokeWidth="2dp"
+        custom:circleColor="#bdbdbd"
+        custom:radius="18dp"
+        custom:ringColor="#52ce90"/>
+
+</RelativeLayout>
