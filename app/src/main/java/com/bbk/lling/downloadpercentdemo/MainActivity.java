@@ -38,10 +38,10 @@ public class MainActivity extends Activity {
                                     mHandler.sendEmptyMessage(MSG_FINISHED);
                                     return;
                                 }
-                                mDownloadProgress += 2;
+                                mDownloadProgress += 1;
                                 mHandler.sendEmptyMessage(MSG_UPDATE);
                                 try{
-                                    Thread.sleep(500);
+                                    Thread.sleep(100);
                                 } catch (Exception e) {
                                 }
 
